@@ -1,0 +1,1951 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang22 CCS SELECTORS\par
+EXERCISE 1\par
+Set the text color to red, for all <p> elements.\par
+\par
+<style>\par
+p \{\par
+color:red;\par
+\}\par
+</style>\par
+\par
+EXERCISE 2\par
+Set the text color to red, for the element with id="para1".\par
+\par
+<style>\par
+#para1 \{\par
+color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p id="para1">This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set the text color to red, for elements with class="colortext".\par
+\par
+<style>\par
+.colortext \{\par
+ color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p class="colortext">This is a paragraph</p>\par
+  <p class="colortext">This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+Set the text color to red, for all <p> and <h1> elements. Group the selectors to minimize code.\par
+\par
+<style>\par
+h1, p \{\par
+color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <h2>This is a smaller heading</h2>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS HOW TO...\par
+\par
+EXERCISE 1\par
+Add an external style sheet with the URL: "mystyle.css".\par
+\par
+<head>\par
+<link rel="stylesheet" href="mystyle.css">\par
+</head>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the page's background color to red.\par
+\par
+<style>\par
+body \{\par
+background-color:  red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set the page's background color to red, by using an inline style.\par
+\par
+<body \par
+style="background-color: red">\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+Insert the missing parts to make the CSS code correct.\par
+\par
+<style>\par
+p \{\par
+color: red;\par
+\}\par
+</style>\par
+\par
+CSS BACKGROUND\par
+\par
+EXERCISE 1\par
+Set the background color of the <h1> element to "lightblue".\par
+\par
+<style>\par
+h1 \{\par
+background-color: lightblue;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set "paper.gif" as the background image of the page.\par
+\par
+<style>\par
+body \{\par
+  background-image: url("paper.gif");\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Make the background image repeat only vertically.\par
+\par
+\par
+<style>\par
+body \{\par
+  background-image: url("img_tree.png");\par
+  background-repeat: repeat-y;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Specify that the background image should be shown once, in the top right corner.\par
+\par
+<style>\par
+body \{\par
+  background-image: url("img_tree.png");\par
+  background-repeat: no-repeat;\par
+  background-position: top right;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 5\par
+Use the correct background property to make the background image NOT scroll with the rest of the page.\par
+\par
+<style>\par
+body \{\par
+  background-image: url("img_tree.png");\par
+   background-attachment: fixed;\par
+\}\par
+</style>\par
+\par
+CSS BORDER\par
+\par
+EXERCISE 1\par
+\par
+Use the border shorthand property to set a "4px", "dotted", "red" border for the <p> elements.\par
+\par
+<style>\par
+p \{\par
+border: 4px dotted red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Use the correct border property to set the border color to "red".\par
+\par
+<style>\par
+p \{\par
+  border-style: dotted;\par
+  border-width: 4px;\par
+  border-color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Use the correct border property to set the LEFT border to "dotted".\par
+\par
+<style>\par
+p \{\par
+border-left-style: dotted;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Use the correct border property to add ROUNDED borders to the <p> elements.\par
+\par
+\par
+<style>\par
+p \{\par
+ border: 2px solid red;\par
+border-radius: 5px;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS MARGIN\par
+\par
+EXERCISE 1\par
+\par
+Add a 20 pixels left margin to the <h1> element.\par
+\par
+\par
+<style>\par
+h1 \{\par
+margin-left: 20px;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Use the shorthand margin property to add 20 pixels top and bottom margins, and 40 pixels left and right margins, on the <h1> element.\par
+\par
+\par
+<style>\par
+h1 \{\par
+ margin: 20px 40px;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+For the <h1> element, use the shorthand margin property to add these margins:\par
+left: 10px\par
+right: 15px\par
+top: 20px\par
+bottom: 25px\par
+\par
+\par
+<style>\par
+h1 \{\par
+  margin: 20px 15px 25px 10px;\par
+\}\par
+</style\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Use the margin property to center align the <h1> element.\par
+\par
+<style>\par
+h1 \{\par
+ margin: auto;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS PADDING\par
+\par
+EXERCISE 1\par
+\par
+Set the top padding of the <h1> element to 30 pixels.\par
+\par
+\par
+<style>\par
+h1 \{\par
+  padding-top: 30px;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the padding of all sides of the <h1> element to 30 pixels.\par
+\par
+\par
+<style>\par
+h1 \{\par
+padding: 30px;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Use the shorthand padding property to add 10 pixels left and right padding, and 40 pixels top and bottom padding, on the <h1> element.\par
+\par
+\par
+<style>\par
+h1 \{\par
+  padding: 40px 10px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS HEIGHT/WIDTH\par
+\par
+EXERCISE 1\par
+\par
+Set the height of the <h1> element to "100px".\par
+\par
+\par
+<style>\par
+h1 \{\par
+  height: 100px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the width of the <h1> element to "50%".\par
+\par
+<style>\par
+h1 \{\par
+width: 50%;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS BOX MODEL \par
+\par
+EXERCISE 1\par
+\par
+Set the width of the <div> element to "200px".\par
+\par
+<style>\par
+div \{\par
+width: 200px;\par
+\}\par
+</style>\par
+<body>\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Add a 2px solid red border to the <div> element.\par
+\par
+<style>\par
+div\par
+ \{\par
+  width: 200px;\par
+  border: 2px solid red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Add 25 pixels space between the <div> element's border and its content.\par
+\par
+\par
+<style>\par
+div \{\par
+  width: 200px;\par
+  border: 2px solid red;  \par
+   padding: 25px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Add a 25 pixels space outside, to the left of the <div> element.\par
+\par
+\par
+<style>\par
+div \{\par
+  width: 200px;\par
+  border: 2px solid red;  \par
+  padding: 25px;\par
+  margin-left: 25px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+CSS OUTLINE\par
+\par
+EXERCISE 1\par
+\par
+Set a solid, 5px outline border for the <div> element.\par
+\par
+\par
+<style>\par
+div \{\par
+outline-style: solid;\par
+outline-width: 5px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the color of the outline border to red.\par
+\par
+\par
+<style>\par
+div \{\par
+  outline-style: solid;\par
+  outline-width: 5px;\par
+   outline-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Use the outline shorthand property to set a "4px", "dotted", "red" outline border for the <div> element.\par
+\par
+<style>\par
+div \{\par
+outline:  4px dotted red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</div>\par
+\par
+</body>\par
+\par
+CSS TEXT\par
+EXERCISE 1\par
+\par
+ Change the text color of all <p> elements to "red".\par
+\par
+<style>\par
+p \{\par
+ color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Center align the <p> elements.\par
+\par
+\par
+<style>\par
+p \{\par
+text-align: center;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Remove the underline from the link.\par
+\par
+<style>\par
+a \{\par
+text-decoration: none;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <a href="http://w3schools.com">This is a link</a>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Style text in <h1> to uppercase letters, and text in <p> to capitalized letters.\par
+\par
+<style>\par
+h1 \{\par
+text-transform: uppercase;\par
+\}\par
+p \{\par
+text-transform: capitalize;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 5\par
+\par
+Indent the first line of the <p> element with 20px.\par
+\par
+<style>\par
+p \{\par
+text-indent: 20px;\par
+\}\par
+</style>\par
+\par
+<p>\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit,\par
+sed do eiusmod tempor incididunt\par
+ut labore et dolore magna aliqua.\par
+</p>\par
+\par
+CSS FONT\par
+\par
+EXERCISE 1\par
+\par
+Set the font for <h1> to "Verdana".\par
+\par
+\par
+<style>\par
+h1 \{\par
+font-family: Verdana;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the style of <h1> to "italic" text.\par
+\par
+<style>\par
+h1 \{\par
+font-style: italic;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set the font size of <h1> to 50px.\par
+\par
+\par
+<style>\par
+h1 \{\par
+  font-size: 50px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Set the style of <p> elements as "bold" text.\par
+\par
+\par
+<style>\par
+p \{\par
+font-weight: bold;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>  \par
+</body>\par
+\par
+EXERCISE 5\par
+\par
+Use the correct font- property to style the <p> elements as "small-caps".\par
+\par
+<style>\par
+p \{\par
+font-variant: small-caps;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>  \par
+</body>\par
+\par
+CSS LINK\par
+\par
+EXERCISE 1\par
+\par
+Set the color of links to "red".\par
+\par
+<style>\par
+a \{\par
+  color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <a href="http://w3schools.com">This is a link</a>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the style when you mouse over a link (hover) to red.\par
+\par
+<style>\par
+a:hover\{\par
+  color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <a href="http://w3schools.com">This is a link</a>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set the style for links to pages you have visited to red.\par
+\par
+<style>\par
+a:visited\{\par
+  color: red;\par
+\}\par
+</style>\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <a href="http://w3schools.com">This is a link</a>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Remove the default underline style for links, but add a underline when you mouse over a link (hover).\par
+\par
+<style>\par
+/* unvisited link */\par
+a:link \{text-decoration: none;\}\par
+\par
+/* visited link */\par
+a:visited \{text-decoration: none;\}\par
+\par
+/* mouse over link */\par
+a:hover \{text-decoration: underline;\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <a href="http://w3schools.com">This is a link</a>\par
+</body>\par
+\par
+CSS LISTS\par
+\par
+EXERCISE 1\par
+\par
+Set the list style for unordered lists to "square".\par
+\par
+<style>\par
+ul \{\par
+list-style-type: square;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<ul>\par
+  <li>Coffee</li>\par
+  <li>Tea</li>\par
+  <li>Coca Cola</li>\par
+</ul>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Change the list's item marker to an image called 'bling.jpg':\par
+\par
+<style>\par
+ul \{\par
+list-style-image: url("bling.jpg");\par
+\}\par
+</style>\par
+\par
+<body>\par
+<ul>\par
+  <li>Coffee</li>\par
+  <li>Tea</li>\par
+  <li>Coca Cola</li>\par
+</ul>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Remove the bullets/markers from the list items.\par
+\par
+<style>\par
+ul \{\par
+list-style-type: none;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<ul>\par
+  <li>Coffee</li>\par
+  <li>Tea</li>\par
+  <li>Coca Cola</li>\par
+</ul>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Set the list style to I, II, III, instead of 1, 2, 3 for ordered lists.\par
+\par
+<style>\par
+ol \{\par
+list-style-type: upper-roman;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<ol>\par
+  <li>Coffee</li>\par
+  <li>Tea</li>\par
+  <li>Coca Cola</li>\par
+</ol>\par
+</body>\par
+\par
+CSS TABLES\par
+\par
+EXERCISE 1\par
+\par
+Set the border to "2px solid green" for table, th and td elements.\par
+\par
+<style>\par
+table, th, td\par
+ \{\par
+border: 2px solid green;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<table>\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Collapse the table borders into a single border.\par
+\par
+<style>\par
+table \{ \par
+border-collapse: collapse;\par
+\}\par
+table, th, td \{\par
+ border: 1px solid green;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<table>\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Use inline styles to set the width of the table to "100%".\par
+\par
+<table style="width:100%">\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+\par
+EXERCISE 4\par
+\par
+Set the text alignment in <td> elements to "right".\par
+\par
+\par
+<style>\par
+table, th, td \{\par
+  border: 1px solid green;\par
+\}\par
+td \{\par
+text-align: right;\par
+\}\par
+</style>\par
+<table>\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+\par
+EXERCISE 5\par
+\par
+Set the padding in <th> elements to "15px".\par
+\par
+<style>\par
+table, th, td \{\par
+  border: 1px solid green;\par
+\}\par
+th \{\par
+padding: 15px;\par
+\}\par
+</style>\par
+\par
+<table>\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+\par
+EXERCISE 6\par
+\par
+Set the background color of <th> elements to "lightblue".\par
+\par
+\par
+<style>\par
+table, th, td \{\par
+  border: 1px solid green;\par
+\}\par
+th \{\par
+background-color: lightblue;\par
+\}\par
+</style>\par
+\par
+<table>\par
+  <tr>\par
+    <th>Firstname</th>\par
+    <th>Lastname</th>\par
+  </tr>\par
+  <tr>\par
+    <td>Peter</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Lois</td>\par
+    <td>Griffin</td>\par
+  </tr>\par
+</table>\par
+\par
+CSS DSIPLAY/VISIBILITY\par
+\par
+EXERCISE 1\par
+\par
+Hide the <h1> element. It should still take up the same space as before.\par
+\par
+<style>\par
+h1 \{\par
+ visibility: hidden;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Hide the <h1> element. It should NOT take up any space.\par
+\par
+<style>\par
+h1 \{\par
+display: none;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Display the list items as inline elements.\par
+\par
+<style>\par
+li \{\par
+display: inline;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<ul>\par
+  <li>Apple</li>\par
+  <li>Orange</li>\par
+  <li>Pear</li>\par
+</ul>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Display the <strong> elements as block elements.\par
+\par
+\par
+<style>\par
+strong \{\par
+display: block;\par
+\}\par
+</style>\par
+\par
+<body>\par
+<h1>This is a Heading</h1>\par
+<p>This is a <strong>paragraph</strong></p>\par
+</body>\par
+\par
+CSS POSITIONING\par
+\par
+EXERCISE 1\par
+\par
+Position the <h1> element to always be 50px from the top, and 10px from the right, relative to the window/frame edges.\par
+\par
+<style>\par
+h1 \{\par
+position: fixed;\par
+top: 50px;\par
+right: 10px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Position the <h1> element 50px from the top, relative to its normal position.\par
+\par
+<style>\par
+h1 \{\par
+position: relative;\par
+  top: 50px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Position the <h1> element 50px from the top, relative to the HTML page.\par
+\par
+<style>\par
+h1 \{\par
+position: absolute; \par
+top: 50px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Position the <h1> element 50px from the top, by referring to its class name.\par
+\par
+<style>\par
+.myheader \{\par
+position: relative;\par
+ top: 50px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1 class="myheader">This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+CSS Z-INDEX\par
+\par
+EXERCISE 1\par
+\par
+Both the header and the paragraph are positioned at the top of the page.\par
+\par
+Make sure that the header is placed on top of the paragraph.\par
+\par
+<style>\par
+#mytitle \{\par
+  position: absolute;\par
+  top: 0;\par
+z-index: 1;  \par
+\}\par
+#myintro \{\par
+  position: absolute;\par
+  top: 0;\par
+z-index: 0;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1 id="mytitle">This is a heading</h1>\par
+  <p id="myintro">This is a paragraph</p>\par
+</body>\par
+\par
+CSS OVERFLOW\par
+EXERCISE 1\par
+\par
+Force a scroll bar to the <div> element with class="intro".\par
+\par
+<style>\par
+.intro \{\par
+  width: 200px;\par
+  height: 70px;\par
+overflow: scroll;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div class="intro">\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit.\par
+Phasellus imperdiet, nulla et dictum interdum,\par
+nisi lorem egestas odio,\par
+vitae scelerisque enim ligula venenatis dolor.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Specify that the overflowing text in the <div> element should not be visible, not even with a scroll bar.\par
+\par
+<style>\par
+.intro \{\par
+  width: 200px;\par
+  height: 70px;\par
+overflow: hidden;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div class="intro">\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit.\par
+Phasellus imperdiet, nulla et dictum interdum,\par
+nisi lorem egestas odio,\par
+vitae scelerisque enim ligula venenatis dolor.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Add a horizontal scrollbar to the <div> element.\par
+\par
+\par
+<style>\par
+.intro \{\par
+  width: 200px;\par
+  height: 70px;\par
+  overflow-x: scroll;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div class="intro">\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit.\par
+Phasellus imperdiet, nulla et dictum interdum,\par
+nisi lorem egestas odio,\par
+vitae scelerisque enim ligula venenatis dolor.\par
+</div>\par
+\par
+</body>\par
+\par
+CSS ALIGN\par
+\par
+EXERCISE 1\par
+\par
+Use the margin property to make sure that the <div> element is center aligned according to its parent element.\par
+\par
+\par
+<style>\par
+.intro \{\par
+  width: 200px;\par
+margin: auto;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div class="intro">\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit.\par
+Phasellus imperdiet, nulla et dictum interdum,\par
+nisi lorem egestas odio,\par
+vitae scelerisque enim ligula venenatis dolor.\par
+</div>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Position the <div> element all the way to the right by using absolute positioning.\par
+\par
+\par
+<style>\par
+.intro \{\par
+  width: 200px;\par
+  margin: auto;\par
+position: absolute;\par
+ right: 0px;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div class="intro">\par
+Lorem ipsum dolor sit amet,\par
+consectetur adipiscing elit.\par
+Phasellus imperdiet, nulla et dictum interdum,\par
+nisi lorem egestas odio,\par
+vitae scelerisque enim ligula venenatis dolor.\par
+</div>\par
+\par
+</body>\par
+\par
+CSS COMBINATORS\par
+\par
+EXERCISE 1\par
+\par
+Change the color of all <p> elements, that are descendants of <div> elements, to "red".\par
+\par
+<style>\par
+div p \{\par
+  color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+  <p>This is a paragraph.</p>\par
+  <p>This is a paragraph.</p>\par
+</div>\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Change the color of all <p> elements, that are immediate children of <div> elements, to "red".\par
+\par
+\par
+<style>\par
+div > p \{\par
+  color: red;\par
+\}\par
+</style>\par
+<body>\par
+<div>\par
+  <p>This is a paragraph.</p>\par
+  <p>This is a paragraph.</p>\par
+</div>\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Change the color of the first <p> element that is directly after a <div> element, to "red".\par
+\par
+<style>\par
+div + p \{\par
+  color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+  <p>This is a paragraph.</p>\par
+  <p>This is a paragraph.</p>\par
+</div>\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Change the color of the <p> elements that are siblings of a <div> element, to "red".\par
+\par
+<style>\par
+div ~ p \{\par
+  color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<div>\par
+  <p>This is a paragraph.</p>\par
+  <p>This is a paragraph.</p>\par
+</div>\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+CSS PSEUDO-CLASSES\par
+\par
+EXERCISE 1\par
+\par
+Set the background-color to red, when you mouse over a link.\par
+\par
+<style>\par
+a:hover \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<h1>This is a header.</h1>\par
+<p>This is a paragraph.</p>\par
+<a href="https://w3schools.com">This is a link.</a>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the background-color to red, when you mouse over elements with the class "master".\par
+\par
+<style>\par
+.master:hover \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<h1 class="master">This is a header.</h1>\par
+<p class="master">This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set the background-color to red, of any <p> element that are the first child of any element.\par
+\par
+<style>\par
+p:first-child \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+Set the background-color to red, of any <input> element that are in focus.\par
+\par
+\par
+<style>\par
+input:focus \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<form>\par
+  Name:\par
+  <input type="text" name="fname">\par
+  Age:\par
+  <input type="text" name="age">\par
+</form>\par
+\par
+</body>\par
+\par
+CSS PSEUDO-ELEMENTS\par
+\par
+EXERCISE 1\par
+\par
+Set the background-color to red, of the first line of the paragraph.\par
+\par
+<style>\par
+.intro::first-line \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<p class="intro">\par
+In my younger and more vulnerable years\par
+my father gave me some advice that I've\par
+been turning over in my mind ever since.\par
+'Whenever you feel like criticizing anyone,' he told me,\par
+'just remember that all the people in this world\par
+haven't had the advantages that you've had.'\par
+</p>\par
+\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the background-color to red, for the first letter of the <p> element.\par
+\par
+<style>\par
+.intro::first-letter \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<p class="intro">\par
+In my younger and more vulnerable years\par
+my father gave me some advice that I've\par
+been turning over in my mind ever since.\par
+'Whenever you feel like criticizing anyone,' he told me,\par
+'just remember that all the people in this world\par
+haven't had the advantages that you've had.'\par
+</p>\par
+\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Insert the image "smiley.gif" before, and after any <p>element, using the ::before and ::after pseudo-elements.\par
+\par
+\par
+<style>\par
+p::before \{\par
+  \par
+content: url('smiley.gif');\par
+\}\par
+p::after \{\par
+  \par
+content: url('smiley.gif');\par
+\}\par
+</style>\par
+\par
+<body>\par
+\par
+<p>This is a paragraph.</p>\par
+<p>This is a paragraph.</p>\par
+\par
+</body>\par
+\par
+CSS OPACITY\par
+\par
+EXERCISE 1\par
+\par
+Use CSS to set the transparency of the image to 50%.\par
+\par
+<style>\par
+img \{\par
+opacity: 0.5;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" width="150" height="113">\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Use CSS to "remove" the transparency of the image when the user mouse over the image.\par
+\par
+\par
+<style>\par
+img \{\par
+  opacity: 0.4;\par
+\}\par
+img:hover \{\par
+ opacity: 1.0;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" width="150" height="113">\par
+</body>\par
+\par
+CSS ATTRIBUTE SELECTORS\par
+\par
+EXERCISE 1\par
+\par
+Set the background color to "red" for <a> elements that have a target attribute.\par
+\par
+<style>\par
+a[target] \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <a href="https://w3schools.com">w3schools.com</a>\par
+  <a href="http://disney.com" target="_blank">Disney.com</a>\par
+  <a href="http://wikipedia.org" target="_top">wikipedia.org</a>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the background color to "red" for <a> elements that have a target attribute with the value "_blank".\par
+\par
+<style>\par
+a[target="_blank"] \{\par
+  background-color: red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <a href="https://w3schools.com">w3schools.com</a>\par
+  <a href="http://disney.com" target="_blank">Disney.com</a>\par
+  <a href="http://wikipedia.org" target="_top">wikipedia.org</a>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Set a border for <img> elements that have a title attribute that contains the word blue.\par
+\par
+<style>\par
+img\par
+[title~="blue"] \{\par
+  border: 5px solid red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" title="blue flower">\par
+  <img src="klematis2.jpg" title="purple flowers">\par
+  <img src="klematis3.jpg" title="two blue flowers">  \par
+</body>\par
+ \par
+EXERCISE 4\par
+\par
+Set a border for <img> elements that have a title attribute starting with blue.\par
+\par
+<style>\par
+img\par
+[title^="blue"] \{\par
+  border: 5px solid red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" title="blue flower">\par
+  <img src="klematis2.jpg" title="purple flowers">\par
+  <img src="klematis3.jpg" title="two blue flowers">  \par
+</body>\par
+\par
+EXERCISE 5\par
+\par
+Set a border for <img> elements that have a title attribute ending with the word flower (not flowers).\par
+\par
+<style>\par
+img\par
+[title$="flower"] \{\par
+  border: 5px solid red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" title="blue flower">\par
+  <img src="klematis2.jpg" title="purple flowers">\par
+  <img src="klematis3.jpg" title="two blue flowers">  \par
+</body>\par
+\par
+EXERCISE 6\par
+\par
+Set a border for <img> elements that have a title attribute containing the value flower (hint: flowers also contain flower).\par
+\par
+<style>\par
+img\par
+[title*="flower"] \{\par
+  border: 5px solid red;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <img src="klematis.jpg" title="blue flower">\par
+  <img src="klematis2.jpg" title="purple flowers">\par
+  <img src="klematis3.jpg" title="two blue flowers">  \par
+</body>\par
+\par
+CSS ROUNDED CORNERS\par
+\par
+EXERCISE 1\par
+\par
+Give the div element rounded corners.\par
+\par
+<style>\par
+div \{\par
+  background: red;\par
+border-radius: 10px;  \par
+\}\par
+</style>\par
+\par
+<body>\par
+  <div>This is a div element. It has some text.</div>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Give the div element a rounded corner on the bottom left side.\par
+\par
+<style>\par
+div \{\par
+  background: red;\par
+border-bottom-left-radius: 10px;  \par
+\}\par
+</style>\par
+\par
+<body>\par
+  <div>This is a div element. It has some text.</div>\par
+</body>\par
+\par
+CSS BORDER IMAGES\par
+\par
+EXERCISE 1\par
+\par
+Give the div element an image border. Use the short hand property to define the details of the image border.\par
+\par
+<style>\par
+div \{\par
+  border: 10px solid transparent;\par
+   border-image: url(border.png) 30 round;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <div>This is a div element. It has some text.</div>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+The image border needs a border-image-repeat value, insert one of the legal values.\par
+\par
+<style>\par
+div \{\par
+  border-image-source: url(border.png);\par
+  border-image-repeat: stretch;  \par
+  border-image-slice: 30;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <div>This is a div element. It has some text.</div>\par
+</body>\par
+\par
+CSS BACKGROUNDS\par
+\par
+EXERCISE 1\par
+\par
+Add two background images to the <body> element.\par
+\par
+img1.gif and img2.gif.\par
+\par
+Make sure that img2.gif is displayed on top of img1.gif.\par
+\par
+<style>\par
+body \{\par
+  background-image: url('img2.gif'), url('img1.gif');\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Set the width of the background image to 100px, and the height to 80px.\par
+\par
+\par
+<style>\par
+body \{\par
+  background-image: url('img1.gif');\par
+  background-size: 100px 80px; \par
+  background-repeat: no-repeat;  \par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+Position the two background images in each top corner.\par
+\par
+img1.gif at the left and img2.gif at the right.\par
+\par
+\par
+<style>\par
+body \{\par
+  background-image: url('img1.gif'), url('img2.gif');\par
+  background-repeat: no-repeat, no-repeat;\par
+   background-position: left top, right top;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+There is a CSS property that allows us to specify if the background image should be positioned according to the border, padding or the content.\par
+\par
+Insert the correct CSS background property, and value, to position the image according to where the content is positioned.\par
+\par
+<style>\par
+#example1 \{\par
+  padding: 20px;\par
+  background-image: url('img1.gif');\par
+  background-repeat: no-repeat;\par
+  background-origin: content-box;\par
+\}\par
+</style>\par
+\par
+EXERCISE 5\par
+\par
+The background-clip" property has three possible values, insert one of them.\par
+\par
+<style>\par
+#example1 \{\par
+  border: 10px dotted red;\par
+  padding: 20px;\par
+  background-color: yellow;\par
+  background-clip: padding-box;\par
+\}\par
+</style>\par
+\par
+CSS COLORS\par
+\par
+EXERCISE 1\par
+\par
+Insert the RGBA color value for a full red background color of the <h1> element, with no transparency.\par
+\par
+<style>\par
+h1 \{\par
+  background-color: rgba(255, 0, 0, 1.0);\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 2\par
+\par
+Use hue, saturation and lightness to set a background color of the <h1> element.\par
+\par
+Set the hue to red, saturation to 100%, and lightness to 50%.\par
+\par
+<style>\par
+h1 \{\par
+  background-color: hsl(0, 100%, 50%);\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 3\par
+\par
+There is also a method where we can specify the alpha channel as well as hue, saturation, and lightness, what is the name of this method?\par
+\par
+<style>\par
+h1 \{\par
+  background-color: hsla (0, 100%, 50%, 0.3);\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+EXERCISE 4\par
+\par
+We can set the transparence for the whole element, not only the background, by using which CSS property?\par
+\par
+<style>\par
+h1 \{\par
+  background-color: rgb(255, 0, 0);\par
+  opacity: 0.3;\par
+\}\par
+</style>\par
+\par
+<body>\par
+  <h1>This is a heading</h1>\par
+  <p>This is a paragraph</p>\par
+  <p>This is a paragraph</p>\par
+</body>\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
